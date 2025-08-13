@@ -5,10 +5,7 @@ const Contador = () => {
   //Logica
   //   let contador = 0;
   const [contador, setContador] = useState(0);
-  const Sumar = () => {
-    setContador(contador + 1);
-    console.log(contador);
-  };
+
   return (
     <section className="text-center d-flex justify-content-center mt-5">
       <div className="card w-50">
@@ -17,7 +14,10 @@ const Contador = () => {
 
           <p className="card-text fs-3">{contador}</p>
 
-          <button className="btn btn-primary fs-3" onClick={Sumar}>
+          <button
+            className="btn btn-primary fs-3"
+            onClick={() => setContador(contador + 1)}
+          >
             +
           </button>
         </div>
