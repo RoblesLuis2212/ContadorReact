@@ -18,7 +18,7 @@ const TeoriaComponente = ({ comision, modulo }) => {
         automáticamente en la interfaz de usuario.
       </p>
 
-      <div class="alert alert-primary" role="alert">
+      <div className="alert alert-primary" role="alert">
         Comision: {comision} Modulo: {modulo}
       </div>
     </section>
